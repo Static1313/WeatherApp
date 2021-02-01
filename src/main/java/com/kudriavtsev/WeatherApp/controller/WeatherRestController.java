@@ -2,6 +2,7 @@ package com.kudriavtsev.WeatherApp.controller;
 
 import com.kudriavtsev.WeatherApp.model.Weather;
 import com.kudriavtsev.WeatherApp.services.WeatherService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +13,7 @@ public class WeatherRestController {
 
     private final WeatherService weatherService;
 
-    public WeatherRestController(WeatherService weatherService) {
+    public WeatherRestController(@Qualifier("openWeatherService") WeatherService weatherService) {
         this.weatherService = weatherService;
     }
 

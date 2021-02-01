@@ -7,8 +7,8 @@ import lombok.Data;
 @AllArgsConstructor
 public class Weather {
 
-    private String source;
-    private String city;
-    private String temperature;
+    private final String source;
+    private final String city;
+    private final String temperature;
 
 }

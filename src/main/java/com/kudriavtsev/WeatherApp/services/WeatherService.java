@@ -4,6 +4,6 @@ import com.kudriavtsev.WeatherApp.model.Weather;
 
 import java.util.List;
 
-public interface WeatherInterface {
+public interface WeatherService {
     List<Weather> gWeather();
 }
